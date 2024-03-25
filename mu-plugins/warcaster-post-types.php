@@ -22,7 +22,7 @@ function warcaster_post_types(){
             'add_new_item' => 'Create New Subclass',
             'edit_item' => 'Edit SubClasses',
             'all_items' => 'All SubClasses',
-            'singular_name' => "SubClasse",
+            'singular_name' => "SubClass",
         ),
         'menu_icon' => 'dashicons-groups',
         'rewrite' => array('slug' => 'subclass'),
@@ -45,6 +45,21 @@ function warcaster_post_types(){
         'supports' => array('title', 'editor')
         ));
 
+
+    register_post_type('winners', array(
+        'public' => true,
+        'labels' => array(
+            'name' => "Player Character Contest",
+            'add_new_item' => 'Add Winner',
+            'edit_item' => 'Edit Winners',
+            'all_items' => 'All Winners',
+            'singular_name' => "Winner",
+        ),
+        'menu_icon' => 'dashicons-buddicons-activity',
+        'rewrite' => array('slug' => 'winners'),
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail')
+        ));
 
 }
 
