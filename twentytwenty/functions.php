@@ -64,7 +64,8 @@ function twentytwenty_theme_support() {
 
 	// Add custom image size used in Cover Template.
 	add_image_size( 'twentytwenty-fullscreen', 1980, 9999 );
-
+	add_image_size('characterPortrait',480, 650, true);
+	add_image_size('characterLandscape',400, 260, true);
 	// Custom logo.
 	$logo_width  = 120;
 	$logo_height = 90;
@@ -797,3 +798,15 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+add_filter('login_headerurl','ourHeaderUrl');
+ function ourHeaderUrl(){
+ return esc_url(site_url('/'));
+ }
+
+add_action('login_enqueue_scripts','ourLoginCSS');
+ function ourLoginCSS(){
+	wp_enqueue_style('twentytwenty-style',get_stylesheet_uri()); 
+	wp_enqueue_style('custom-google-font','https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
+ 
+ }

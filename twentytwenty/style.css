@@ -2365,7 +2365,7 @@ body.template-full-width [class*="wp-block"].alignfull:not(.has-background) [cla
 
 .archive-header {
 	background-color: #fff;
-	padding: 4rem 0;
+	padding: 2rem 0;
 }
 
 .reduced-spacing .archive-header {
@@ -4403,6 +4403,7 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
+
 	background-color: #fff;
 	border-color: #dedfdf;
 	border-style: solid;
@@ -5091,7 +5092,7 @@ a.to-the-top > * {
 	/* Post: Archive ------------------------- */
 
 	.archive-header {
-		padding: 8rem 0;
+		padding: 2rem 0;
 	}
 
 	.reduced-spacing .archive-header {
@@ -6521,6 +6522,8 @@ a.to-the-top > * {
 	}
 }
 
+
+/* My Own Custom CSS */
 .character-cards {
     margin: 0;
     padding: 0;
@@ -6558,7 +6561,7 @@ a.to-the-top > * {
 
 .character-card__name {
 	font-weight: 300;
-	font-size: .9rem;
+	font-size: 2rem;
 	position: absolute;
 	bottom: 0;
 	color: #FFF;
@@ -6576,3 +6579,114 @@ a.to-the-top > * {
 	display: inline-block;
 	list-style: none;
 }
+
+ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .spell_list-item {
+	margin-bottom: 5px;
+	list-style: none;
+	font-size: 3rem;
+  }
+  
+  .spell_list-item a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+  }
+  
+  .spell_list-item a:hover {
+	color: #007bff;
+  }
+
+  .category_title {
+	color: #ff6347; 
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+  }
+  
+  ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  ul li {
+	margin-bottom: 5px;
+  }
+  
+  ul a {
+	text-decoration: none;
+	color: #333;
+  }
+  
+ 
+  ul a:hover {
+	color: #007bff;
+  }
+
+  .container {
+	display: flex;
+  }
+
+  .sidenav {
+	height: 100%; 
+	width: 200px;
+	background-color: #f0f0f0; 
+	overflow-x: hidden; 
+	padding-top: 20px;
+  }
+  
+  .sidenav a {
+	padding: 6px 8px 6px 16px; 
+	text-decoration: none;
+	font-size: 18px; 
+	color: #000;
+	display: block;
+  }
+
+  .sidenav a:hover {
+	background-color: #ddd; 
+  }
+  
+  .content {
+	flex: 1;
+	padding: 16px;
+	padding-left: 30px;
+  }
+  
+  section {
+	margin-bottom: 20px;
+  }
+
+  .feat{
+	padding: 5px;
+
+  }
+
+  .single_post{
+	padding-left: 30px;
+	padding-right: 20%;
+  }
+
+  .detailed_header{
+	border-bottom: 3px solid #cd2653;
+  }
+
+  .player {
+	display: flex;
+	/* align-items: center; */
+  }
+
+  .player img {
+	width: 19%;
+	height: auto;
+	margin-right: 20px;
+  }
+  
+  .player .text_player {
+	flex: 1;
+	font-size: larger;
+  }
